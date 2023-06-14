@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "aside"
+        "header"
+        "main"
+        "footer";
+}
+
+.menu2 {
+    display: none;
+}
+
+.menu img {
+    grid-area: aside;
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(8, 179, 130);
+}
+
+.menu__icono {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 10px;
+}
+
+.menu__hamb {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header {
+    grid-area: header;
+    max-width: 100%;
+    background-color: gainsboro;
+}
+
+.header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header select {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.main {
+    grid-area: main;
+}
+
+.container__card {
+    height: 65vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "card"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7";
+}
+
+.card {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card;
+}
+
+.card__img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card1 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card1;
+}
+
+.card1 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card2 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card2;
+}
+
+.card2 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card3 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card3;
+}
+
+.card3 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card4 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card4;
+}
+
+.card4 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card5 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card5;
+}
+
+.card5 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card6 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card6;
+}
+
+.card6 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card7 {
+    margin: 10px 10px;
+    border: 1px solid gray;
+    grid-area: card7;
+}
+
+.card7 img {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.card__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__footer p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card__footer button {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    background-color: aquamarine;
+}
+
+.carrusel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.item {
+    justify-content: center;
+    display: flex;
+    border: 1px solid;
+    width: 20px;
+}
+
+.carrusel a {
+    text-decoration: none;
+    color: blue;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    max-height: 100vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(5, 91, 66);
+}
+
+.footer__icono {
+    gap: 1rem;
+    font-size: 25px;
+    margin-top: 20px;
+    display: flex;
+}
+
+@media (min-width:576px) {
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav header header header header"
+            "nav main main main main"
+            "footer main main main main";
+    }
+
+    .menu2 {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(8, 179, 130);
+    }
+
+    .menu2 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu2__icono {
+        display: flex;
+        gap: 1rem;
+        font-size: 16px;
+    }
+
+    .menu__horizontal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .container__card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "card card1 card2 card3"
+            "card4 card5 card6 card7";
+
+    }
+
+    .footer {
+        margin: 0;
+        grid-area: footer;
+    }
+}
