@@ -246,11 +246,11 @@ body {
     .container {
         height: 100vh;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 20% 80%;
         grid-template-areas:
-            "nav header header header header"
-            "nav main main main main"
-            "footer main main main main";
+            "nav header"
+            "nav main"
+            "footer main";
     }
 
     .menu2 {
