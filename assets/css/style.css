@@ -242,7 +242,7 @@ body {
     display: flex;
 }
 
-@media (min-width:576px) {
+@media (width>=576px) {
     .container {
         height: 100vh;
         display: grid;
